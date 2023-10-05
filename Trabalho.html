@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho RDR2</title>
+    <style>
+        .cabeçalho {
+            background-color: #C4302B;
+        }
+
+        .logo {
+            width: 200px;
+            height: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 42%;
+        }
+
+        .headline {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .row-menu {
+            display: flex;
+            font-weight: bold;
+        }
+
+        .col-menu {
+            width: 25%;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px black;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .row-menu .col-menu:nth-child(2),
+        .row-menu .col-menu:nth-child(3),
+        .row-menu .col-menu:nth-child(4) {
+            margin-left: 1px;
+        }
+
+        .links {
+            height: 300px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .espiar {
+            font-size: 24px;
+            padding-bottom: 50px;
+        }
+
+        .links img {
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        
+
+        .row-link {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1000px;
+            color: white;
+        }
+
+        .col-link {
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #texto-sobre {
+            cursor: pointer;
+        }
+
+        .col-link:first-child {
+            margin-left: 0;
+        }
+
+        .col-link:last-child {
+            margin-right: 0;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="cabeçalho">
+        <img src="https://i0.wp.com/thetechieguy.com/wp-content/uploads/2018/11/red-dead-redemption-2-questions-answered-5.jpg?w=796&ssl=1" alt="Logo" class="logo">
+        <h1 class="headline">O Melhor jogo de Western já feito</h1>
+        <div class="row-menu">
+            <div class="col-menu">História</div>
+            <div class="col-menu">RDR1</div>
+            <div class="col-menu">Conteúdo</div>
+            <div class="col-menu">Plataformas</div>            
+        </div>
+    </div>
+    <div class="links">
+        <h1 class="espiar">Dê uma espiada no que está por vir</h1>
+        <div class="row-link">
+            <div class="col-link">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+            </div>
+            <div class="col-link" id="texto-sobre">Personagens</div>
+
+            <div class="col-link">    
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+            </div>
+            <div class="col-link" id="texto-sobre">As Armas</div>
+            
+            <div class="col-link">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="">
+            </div>
+            <div class="col-link" id="texto-sobre">As Missões</div>
+        </div>
+        <div class="row-link">
+            <div class="col-link">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+            </div>
+            <div class="col-link" id="texto-sobre">O Mundo</div>
+
+            <div class="col-link">    
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+            </div>
+            <div class="col-link" id="texto-sobre">A Natureza</div>
+            
+            <div class="col-link">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="">
+            </div>
+            <div class="col-link" id="texto-sobre">As Roupas</div>
+        </div>
+    </div>
+    <div></div>
+    
+</body>
+</html>
