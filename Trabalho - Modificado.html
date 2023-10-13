@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <title>Trabalho RDR2</title>
+    <style>
+        .cabeçalho {
+            background-color: #C4302B;
+        }
+
+        .logo {
+            width: 200px;
+            height: 60px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            margin-left: 42%;
+            align-items: center;
+        }
+
+        .headline {
+            margin-bottom: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        .formulario1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .form-input1 {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .form-button1 {
+            width: 150px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .row-menu {
+            display: flex;
+            font-weight: bold;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+
+        .col-menu {
+            width: 25%;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px black;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .row-menu .col-menu:nth-child(2),
+        .row-menu .col-menu:nth-child(3),
+        .row-menu .col-menu:nth-child(4) {
+            margin-left: 1px;
+        }
+
+        .parte2 {
+            background-color: black;
+            color: white;
+        }
+
+        .container-fluid {
+            max-height: fit-content;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .espiar {
+            font-size: 24px;
+            padding-bottom: 50px;
+        }
+
+        .col-sm-2 img {
+            width: 100px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        #texto-sobre {
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 5%;
+        }
+
+        .parte3 {
+            background-color: #C4302B;
+            color: white;   
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .profile {
+            width: 350px;
+            height: 20   0px;  
+        }
+
+        .about-text {
+            width: 60%;
+            font-size: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .parte4 {
+            background-color: black;
+            color: white;
+        }
+
+        .trailer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .trailer-text {
+            width: 60%;
+            font-size: 20px;
+            text-align: justify;
+            color: white;
+        }
+
+        .video {
+            width: 400px;
+            height: 400px;
+        }
+
+        .parte5 {
+            background-color: #C4302B;
+            color: white;
+        }
+
+        .avaliacao {
+            margin-bottom: 15px;
+            text-align: center;
+
+        }
+
+        .elogios {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            padding-bottom: 100px;
+            flex-wrap: wrap;
+        }
+
+        #elogios-text {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            margin-left: 160px;
+            margin-right: 100px;
+            box-sizing: inherit;
+            box-shadow: 0 0 5px black;
+            border: none;
+            background-color: #000;
+            border-top-right-radius: 10%;
+            border-top-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+            border-bottom-left-radius: 10%;
+            max-width: fit-content;
+        }
+
+        .elogios #elogios-text:nth-child(2),
+        .elogios #elogios-text:nth-child(3) {
+            margin-left: 50px;
+        }
+
+        #logos2 img {
+            flex-direction: column;
+            width: 100px;
+            height: 100px;
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+
+        .parte6 {
+            background-color: black;
+            color: white;
+            padding: 40px;
+        }
+
+        .formulario2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-input2 {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .form-button2 {
+            width: 100px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cabeçalho">
+        <img src="https://i0.wp.com/thetechieguy.com/wp-content/uploads/2018/11/red-dead-redemption-2-questions-answered-5.jpg?w=796&ssl=1" alt="Logo" class="logo">
+        <h1 class="headline">O Melhor jogo de Western já feito</h1>
+        <div class="formulario1">
+            <input type="text" placeholder="Login" class="form-input1">
+            <input type="email" placeholder="Senha" class="form-input1">
+            <button type="submit" class="form-button1">Login</button>
+            <button type="submit" class="form-button1">Registre-se</button>
+        </div>
+        <div class="row-menu">
+            <div class="col-menu">História</div>
+            <div class="col-menu">RDR1</div>
+            <div class="col-menu">Conteúdo</div>
+            <div class="col-menu">Plataformas</div>            
+        </div>
+    </div>
+    <div class="parte2">
+        <div class="container-fluid">
+            <h1 class="espiar">Dê uma espiada no que está por vir</h1>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">Personagens</div>
+
+                    <div class="col-sm-2">    
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">As Missões</div>
+            
+                    <div class="col-sm-2">
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">O Mundo</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">A Natureza</div>
+
+                    <div class="col-sm-2">    
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">As Armas</div>
+            
+                    <div class="col-sm-2">
+                        <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/10/red-dead-redemption-2-pc-rumor.png" alt="icon">
+                    </div>
+                    <div class="col-sm-2" id="texto-sobre">Moonshine</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parte3">
+        <div class="about">
+            <img src=https://uploads.jovemnerd.com.br/wp-content/uploads/2018/08/red-dead-redemption-2-portugues-1210x540.png alt="Profile1" class="profile">
+            <div class="about-text">Red Dead Redemption 2 é uma história épica de honra e lealdade no 
+             alvorecer dos tempos modernos. Você joga como Arthur Morgan, um fora da lei membro da gangue 
+             Van der Linde, que precisa fugir dos agentes federais e caçadores de recompensas que estão 
+             em seu encalço. Enquanto as divisões internas ameaçam separar a gangue, Arthur deve escolher 
+             entre seus próprios ideais e a lealdade à gangue que o criou.</div>
+
+    </div>
+    <div class="parte4">
+        <div class="trailer">
+            <div class="trailer-text">Red Dead Redemption 2 para PC aproveita ao máximo o poder do PC 
+                ou do Console para dar vida a cada canto deste mundo enorme, rico e detalhado, incluindo 
+                distâncias maiores de renderização; iluminação global e oclusão de ambiente de maior qualidade 
+                para melhorar o dia e a iluminação noturna; reflexos aprimorados e sombras mais profundas 
+                e de maior resolução em todas as distâncias; texturas de árvores e grama melhoradas para maior 
+                realismo em cada planta e animal. Red Dead Redemption 2 para PC também oferece suporte a HDR, 
+                a capacidade de executar configurações de exibição de ponta com resolução 4K e além, 
+                configurações de vários monitores, widescreen, taxas de quadros 
+                mais rápidas e muito mais.</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dw_oH5oiUSE?si=plF7HRCJKCnag0uK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video">
+            </iframe>
+        </div>
+    </div>
+    <div class="parte5">
+        <div class="elogios">
+            <h1 class="avaliacao">Críticas</h1>
+            <div class="row">
+                <div class="col-sm-2" id="elogios-text">"Red Dead Redemption 2 é um jogo magnífico que deve ser apreciado 
+                    por sua narrativa envolvente, seus personagens memoráveis, seu belo mundo aberto e 
+                    sua jogabilidade variada." - IGN</div>
+                <div class="col-sm-2" id="elogios-text">"Red Dead Redemption 2 é uma obra-prima absoluta. 
+                    Cada aspecto deste jogo incrivelmente elaborado é excelente." - GameSpot</div>
+                <div class="col-sm-2" id="elogios-text">"Red Dead Redemption 2 é um jogo que transcende seu gênero e seu 
+                    meio para se tornar algo muito maior, uma experiência interativa 
+                    moderna que nos define." - The Guardian</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2" id="logos2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/IGN_Entertainment_Logo.svg/298px-IGN_Entertainment_Logo.svg.png" alt="icon">
+                </div>
+                <div class="col-sm-2" id="logos2">
+                    <img src="https://seeklogo.com/images/G/Gamespot-logo-4896D00779-seeklogo.com.png" alt="icon">
+                </div>
+                <div class="col-sm-2" id="logos2">
+                    <img src="https://assets-legacy.floridarrc.com/2023/01/the-guardian-logo-300x164.jpeg" alt="icon">
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="parte6">
+        <div class="rodape">
+            <div class="formulario2">
+                <input type="text" placeholder="Nome" class="form-input2">
+                <input type="email" placeholder="Email" class="form-input2">
+                <input type="text" placeholder="Mensagem" class="form-input2">
+                <button type="submit" class="form-button2">Enviar</button>
+            </div>
+            <br>
+            <div>© 2023 Rockstar Games. Todos os direitos reservados.</div><hr>
+        </div>
+     </div>
+        
+    
+</body>
+</html>
